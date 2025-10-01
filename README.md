@@ -114,13 +114,9 @@ public class Main {
     public static void main(String[] args) {
         double a = in.nextDouble();
         double b = in.nextDouble();
-        double a1 = 0;
-        if(a != 0){
-            a1 = 1/a;
-        }
         if(b != 0){
             if(a == 0){
-                if(b>0){
+                if(b > 0){
                     out.println("x>0");
                 }
                 else{
@@ -128,19 +124,23 @@ public class Main {
                 }
             }
             else{
-                if(b>0){
-                    if(a>0){
+                double a1 = 0;
+                if(a != 0){
+                    a1 = 1/a;
+                }
+                if(b > 0){
+                    if(a > 0){
                         out.printf("0<x<%.3f", a1);
                     }
                     else{
-                        if(a<0){
+                        if(a < 0){
                             out.printf("%.3f<x<0", a1);
                         }
                     }
                 }
                 else{
-                    if(b<0){
-                        if(a>0){
+                    if(b < 0){
+                        if(a > 0){
                             out.printf("x<0 or x>%.3f", a1);
                         }
                         else{
