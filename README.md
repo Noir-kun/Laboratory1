@@ -80,7 +80,7 @@
 ```mermaid
 graph TD
     A([Начало]) --> B[/Ввести: a, b/]
-    B --> C{b != 0}
+    B --> C{b ≠ 0}
     C -- Нет --> E[/Вывод: no such x/]
     C -- Да --> I{a = 0}
     I -- Нет --> J{b > 0}
@@ -206,7 +206,7 @@ public class Main {
 
     - **Output**:
         ```
-        0<x<0,192
+        0<x<0.192
         ```
 
 5. Тест на `a < 0` и `b > 0`:
@@ -218,7 +218,7 @@ public class Main {
 
     - **Output**:
         ```
-        -0,294<x<0
+        -0.294<x<0
         ```
 
 6. Тест на `a > 0` и `b < 0`:
@@ -230,7 +230,7 @@ public class Main {
 
     - **Output**:
         ```
-        x<0 or x>0,095
+        x<0 or x>0.095
         ```
 
 7. Тест на `a < 0` и `b < 0`:
@@ -242,5 +242,5 @@ public class Main {
 
     - **Output**:
         ```
-        x<-0,118 or x>0
+        x<-0.118 or x>0
         ```
